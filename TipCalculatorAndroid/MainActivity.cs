@@ -27,7 +27,8 @@ namespace TipCalculatorAndroid
             tipRadioGroup = FindViewById<RadioGroup>(Resource.Id.tipRateGroup);
             checkedRadioButton = FindViewById<RadioButton>(tipRadioGroup.CheckedRadioButtonId);
 
-            amount.Text = "0.00";
+            amount.Text = $"0.00";
+            tipAmount.Text = $"{0.00:C}";
             amount.TextChanged += Amount_TextChanged;
             tipRadioGroup.CheckedChange += TipRateGroup_CheckedChange;
         }

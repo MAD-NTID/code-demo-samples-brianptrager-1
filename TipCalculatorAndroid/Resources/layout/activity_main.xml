@@ -5,52 +5,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     android:orientation="vertical">
+    <TextView
+        android:text="Large Text"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/bright_red"
+        android:id="@+id/tipAmount"
+        android:tooltipText="Shows you the tip amount"
+        android:textSize="48sp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Amount:"
         android:padding="10dp"
-        android:textSize="@dimen/abc_text_size_body_2_material"/>
+        android:textSize="24sp"/>
     <EditText
         android:id="@+id/amountInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
-        android:layout_marginTop="10dp"/>
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="24sp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tip Rate:"
         android:padding="10dp"
-        android:textSize="@dimen/abc_text_size_body_2_material"/>
+        android:textSize="24sp"/>
     <RadioGroup
         android:minWidth="25px"
         android:minHeight="25px"
+        android:textSize="24sp"
+        android:padding="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:id="@+id/tipRateGroup">
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="15%"
+            android:textSize="24sp"
+            android:padding="5dp"
+            android:layout_marginLeft="20dp"
             android:id="@+id/tipButton15" />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="20%"
+            android:textSize="24sp"
+            android:padding="5dp"
+            android:layout_marginLeft="20dp"
             android:id="@+id/tipButton20" />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="25%"
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"
             android:id="@+id/tipButton25" />
     </RadioGroup>
-    <TextView
-        android:text="Large Text"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tipAmount" />
+    
 </LinearLayout>
