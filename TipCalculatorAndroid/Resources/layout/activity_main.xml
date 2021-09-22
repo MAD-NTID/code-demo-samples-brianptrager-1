@@ -21,6 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Amount:"
+        android:textColor="@color/accent_red"
         android:padding="10dp"
         android:textSize="24sp"/>
     <EditText
@@ -28,6 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
+        android:textColor="@color/bright_red"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textSize="24sp"/>
@@ -35,6 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tip Rate:"
+        android:textColor="@color/accent_red"
         android:padding="10dp"
         android:textSize="24sp"/>
     <RadioGroup
@@ -45,6 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        
         android:id="@+id/tipRateGroup">
         <RadioButton
             android:layout_width="wrap_content"
@@ -54,6 +58,7 @@
             android:textSize="24sp"
             android:padding="5dp"
             android:layout_marginLeft="20dp"
+            android:textColor="@color/bright_red"
             android:id="@+id/tipButton15" />
         <RadioButton
             android:layout_width="wrap_content"
@@ -62,6 +67,7 @@
             android:textSize="24sp"
             android:padding="5dp"
             android:layout_marginLeft="20dp"
+            android:textColor="@color/bright_red"
             android:id="@+id/tipButton20" />
         <RadioButton
             android:layout_width="wrap_content"
@@ -69,6 +75,7 @@
             android:text="25%"
             android:textSize="24sp"
             android:layout_marginLeft="20dp"
+            android:textColor="@color/bright_red"
             android:id="@+id/tipButton25" />
     </RadioGroup>
     
